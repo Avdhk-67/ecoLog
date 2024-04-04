@@ -45,7 +45,7 @@ export const Market = () => {
       <CardContent>
         <Table>
           <TableHeader>
-            <TableRow>
+            <TableRow className='bg-red '>
               <TableHead>Volume</TableHead>
               <TableHead>Type</TableHead>
               <TableHead></TableHead> {/* Added Sell column */}

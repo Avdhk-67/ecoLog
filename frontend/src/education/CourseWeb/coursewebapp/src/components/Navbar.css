@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+
+    margin-left: 115px;
+    margin-right: 115px;
+    
+    color: white;
+    text-align: center;
+    background-color: #064E3B;
+}

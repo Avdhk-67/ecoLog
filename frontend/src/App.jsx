@@ -10,7 +10,8 @@ import { Landing } from "./pages/Landing";
 import { Header } from "./pages/Header";
 import { FullDashboard } from "./pages/FullDashboard";
 import { Login } from "./pages/login";
-
+import  Education  from "./education/CourseWeb/coursewebapp/src/Education";
+import Events from "./eventapp/src/Events";
 function App() {
   return (
     <>
@@ -27,6 +28,8 @@ function App() {
             element={<FullDashboard></FullDashboard>}
           />
           <Route path="/market" element={<Market />} />
+          <Route path="/learnmore" element={<Education/>} />
+          <Route path="/events" element={<Events/>}/>
         </Routes>
       </BrowserRouter>
     </>

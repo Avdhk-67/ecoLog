@@ -1,0 +1,74 @@
+.card {
+    width: 300px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: black;
+    height: 300px;
+    border-radius: 2%;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: transform 0.3s;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.card:hover::before{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.image {
+    position: relative;  
+    /* height: 20px;
+    width: 20px;
+    */
+    width: 600px;
+    /* object-fit: contain; */
+    border-radius: 5%; 
+    margin: 0px;
+}
+
+
+.iconbtn {
+    position: absolute;
+    margin-left: 250px;
+    border-radius: 50%;
+    margin-top: -17px;
+}
+
+.title {
+    color: black;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.description {
+    color: black;
+    padding-left: 7px;
+}
+/* .kuchbhi{
+    height:50%;
+    width:100%;
+} */
+
